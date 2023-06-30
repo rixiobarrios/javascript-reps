@@ -6,11 +6,11 @@
 
 // Perhaps the easiest-to-understand case for reduce() is to return the sum of all the elements in an array:
 
-const array1 = [1, 2, 3, 4];
+const arr = [1, 2, 3, 4];
 
 // 0 + 1 + 2 + 3 + 4
 const initialValue = 0;
-const sumWithInitial = array1.reduce(
+const sumWithInitial = arr.reduce(
     (previousValue, currentValue) => previousValue + currentValue,
     initialValue
 );
