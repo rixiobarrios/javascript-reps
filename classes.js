@@ -25,7 +25,72 @@
 //     }
 // }
 
-// Create a class
+// Expression; the class is anonymous but assigned to a variable
+// const Rectangle = class {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+// };
+
+// Expression; the class has its own name
+// const Rectangle = class Rectangle2 {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+// };
+
+// Methods
+// Methods are defined on the prototype of each class instance and are shared by all instances. Methods can be plain functions, async functions, generator functions, or async generator functions. For more information, see method definitions.
+
+// class Rectangle {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+//   // Getter
+//   get area() {
+//     return this.calcArea();
+//   }
+//   // Method
+//   calcArea() {
+//     return this.height * this.width;
+//   }
+//   *getSides() {
+//     yield this.height;
+//     yield this.width;
+//     yield this.height;
+//     yield this.width;
+//   }
+// }
+
+// const square = new Rectangle(10, 10);
+
+// console.log(square.area); // 100
+// console.log([...square.getSides()]); // [10, 10, 10, 10]
+
+//Static
+// The static keyword defines a static method or field for a class, or a static initialization block. Static properties cannot be directly accessed on instances of the class. Instead, they're accessed on the class itself.
+
+// Static methods are often utility functions, such as functions to create or clone objects, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
+
+// class ClassWithStaticMethod {
+//   static staticProperty = 'someValue';
+//   static staticMethod() {
+//     return 'static method has been called.';
+//   }
+//   static {
+//     console.log('Class static initialization block called');
+//   }
+// }
+
+// console.log(ClassWithStaticMethod.staticProperty);
+// // Expected output: "someValue"
+// console.log(ClassWithStaticMethod.staticMethod());
+// // Expected output: "static method has been called."
+
+// Create a class--------------------------------------------
 // class User {
 //     constructor(name) {
 //         this.name = name;
@@ -38,7 +103,7 @@
 // let user = new User("John");
 // user.sayHi();
 
-//Create a class
+// Create a class--------------------------------------------
 // class Car {
 //     constructor(make) {
 //         this.make = make;
@@ -50,7 +115,7 @@
 // let car = new Car("Chevy");
 // car.drive();
 
-//Create a class
+// Create a class--------------------------------------------
 // class Dog {
 //     constructor(breed) {
 //         this.breed = breed;
@@ -62,7 +127,7 @@
 // let dog = new Dog('Chihuahua');
 // dog.bark();
 
-//Create a class
+// Create a class--------------------------------------------
 // class Vehicle {
 //     constructor(model, year) {
 //         this.model = model;
@@ -76,7 +141,7 @@
 // console.log(vehicle1);
 // console.log(vehicle2);
 
-// Create a class
+// Create a class--------------------------------------------
 // class Employee {
 //     constructor(title, startYear) {
 //         this.title = title;
@@ -101,6 +166,7 @@
 //         ' years'
 // );
 
+// Create a class--------------------------------------------
 // class Password {
 //     constructor(combination) {
 //         this.combination = combination;
@@ -112,22 +178,101 @@
 // console.log(password1);
 // console.log(password2);
 
-function Pen(name, color, price) {
-    this.name = name;
-    this.color = color;
-    this.price = price;
+// Create a class--------------------------------------------
+// function Pen(name, color, price) {
+//     this.name = name;
+//     this.color = color;
+//     this.price = price;
+// }
+
+// const pen1 = new Pen('Maker', 'Red', '$4');
+// const pen2 = new Pen('Sharpie', 'Black', '$2');
+
+// console.log(pen1);
+// console.log(pen2);
+
+// //Use prototype property of Pen to show only price
+// Pen.prototype.showPrice = function () {
+//     console.log(`Price of ${this.name} is ${this.price}`);
+// };
+
+// pen1.showPrice();
+// pen2.showPrice();
+
+// Create a class--------------------------------------------
+// class Pie {
+//     constructor(flavor) {
+//         this.flavor = flavor;
+//     }
+// }
+
+// let pie1 = new Pie('Banana Cream');
+// let pie2 = new Pie('Peanut Butter');
+
+// console.log(pie1);
+// console.log(pie2);
+
+// Create a class--------------------------------------------
+// class Person {
+//     constructor(
+//         firstName = 'John',
+//         lastName = 'Doe',
+//         age = 0,
+//         gender = 'Male'
+//     ) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.age = age;
+//         this.gender = gender;
+//     }
+//     sayFullName() {
+//         return console.log(this.firstName, this.lastName);
+//     }
+// }
+
+// const person = new Person('Rita', 'Martinez', 32, 'female');
+// const john = new Person();
+
+// console.log(person);
+// console.log(john);
+
+// person.sayFullName();
+// john.sayFullName();
+
+// class Hello {
+//     static GreetExtraTerrestrials(raceName) {
+//         return 'Welcome to Planet Earth ' + raceName;
+//     }
+// }
+
+// console.log(Hello.GreetExtraTerrestrials('Martians'));
+
+// Combine both classes/method
+
+class Person {
+    constructor(
+        firstName = 'John',
+        lastName = 'Doe',
+        age = 0,
+        gender = 'Male'
+    ) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.gender = gender;
+    }
+    sayFullName() {
+        return this.firstName + ' ' + this.lastName;
+    }
+    static greetExtraTerrestrials(raceName) {
+        return 'Welcome to Planet Earth ' + raceName;
+    }
 }
 
-const pen1 = new Pen('Maker', 'Red', '$4');
-const pen2 = new Pen('Sharpie', 'Black', '$2');
+const john = new Person();
 
-console.log(pen1);
-console.log(pen2);
+console.log(john.sayFullName());
 
-//Use prototype property of Pen to show only price
-Pen.prototype.showPrice = function () {
-    console.log(`Price of ${this.name} is ${this.price}`);
-};
+console.log(Person.greetExtraTerrestrials('Martians'));
 
-pen1.showPrice();
-pen2.showPrice();
+// Create a class--------------------------------------------
