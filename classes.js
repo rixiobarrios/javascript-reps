@@ -248,31 +248,46 @@
 // console.log(Hello.GreetExtraTerrestrials('Martians'));
 
 // Combine both classes/method
+// class Person {
+//     constructor(
+//         firstName = 'John',
+//         lastName = 'Doe',
+//         age = 0,
+//         gender = 'Male'
+//     ) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.age = age;
+//         this.gender = gender;
+//     }
+//     sayFullName() {
+//         return this.firstName + ' ' + this.lastName;
+//     }
+//     static greetExtraTerrestrials(raceName) {
+//         return 'Welcome to Planet Earth ' + raceName;
+//     }
+// }
 
+// const john = new Person();
+
+// console.log(john.sayFullName());
+
+// console.log(Person.greetExtraTerrestrials('Martians'));
+
+// Create a class--------------------------------------------
 class Person {
-    constructor(
-        firstName = 'John',
-        lastName = 'Doe',
-        age = 0,
-        gender = 'Male'
-    ) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    constructor(name, age) {
+        this.name = name;
         this.age = age;
-        this.gender = gender;
     }
-    sayFullName() {
-        return this.firstName + ' ' + this.lastName;
+    get info() {
+        return this.nameAge();
     }
-    static greetExtraTerrestrials(raceName) {
-        return 'Welcome to Planet Earth ' + raceName;
+    nameAge() {
+        return this.name + 's age is ' + this.age;
     }
 }
 
-const john = new Person();
+const john = new Person('john', 34);
 
-console.log(john.sayFullName());
-
-console.log(Person.greetExtraTerrestrials('Martians'));
-
-// Create a class--------------------------------------------
+console.log(john.info);
