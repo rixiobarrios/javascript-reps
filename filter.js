@@ -16,6 +16,8 @@
 // console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
 
+// Create a filter--------------------------------------------
+
 // Filter by voting age:
 // function canVote(age) {
 //     return age >= 18;
@@ -27,6 +29,8 @@
 // }
 // console.log(func()); //=> [24, 33, 40]
 
+// Create a filter--------------------------------------------
+
 // Filter by positive numbers:
 // function isPositive(value) {
 //     return value > 0;
@@ -35,6 +39,8 @@
 // var filtered = [112, 52, 0, -1, 944].filter(isPositive);
 
 // console.log(filtered);//=> [112, 52, 944]
+
+// Create a for filter--------------------------------------------
 
 // Filter by even numbers:
 function isEven(value) {
