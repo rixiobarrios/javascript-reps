@@ -113,3 +113,9 @@
 // console.log(sumNumbers([2, 4, 3, 1]));
 
 // Create a for Loop--------------------------------------------
+
+// for (let i = 0; i < 100; i++) {
+//     console.log('Hello World');
+// }
+
+// Create a for Loop--------------------------------------------
