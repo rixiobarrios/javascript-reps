@@ -6,14 +6,27 @@
 
 // Perhaps the easiest-to-understand case for reduce() is to return the sum of all the elements in an array:
 
-const arr = [1, 2, 3, 4];
+// const arr = [1, 2, 3, 4];
 
-// 0 + 1 + 2 + 3 + 4
-const initialValue = 0;
-const sumWithInitial = arr.reduce(
-    (previousValue, currentValue) => previousValue + currentValue,
-    initialValue
-);
+// // 0 + 1 + 2 + 3 + 4
+// const initialValue = 0;
+// const sumWithInitial = arr.reduce(
+//     (previousValue, currentValue) => previousValue + currentValue,
+//     initialValue
+// );
 
-console.log(sumWithInitial);
-// expected output: 10
+// console.log(sumWithInitial);
+// // expected output: 10
+
+// Create .reduce()--------------------------------------------
+// Find the largest number contained in a JavaScript array
+
+let arr = [5, 10, 20, 3, 98, 95];
+let largest = arr[0];
+function largestNumber() {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > largest) largest = arr[i];
+    }
+    return largest;
+}
+console.log(largestNumber());
