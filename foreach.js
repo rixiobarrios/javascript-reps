@@ -16,23 +16,23 @@
 
 // First, he wants to test out forEach to check who's present. So as he goes down the array of minions, they should console.log that they're here.
 
-// const minions = [
-//     'bob',
-//     'kevin',
-//     'stuart',
-//     'dave',
-//     'jerry',
-//     'kevin',
-//     'mark',
-//     'tim',
-//     'phil',
-//     'carl',
-// ];
+const minions = [
+    'bob',
+    'kevin',
+    'stuart',
+    'dave',
+    'jerry',
+    'kevin',
+    'mark',
+    'tim',
+    'phil',
+    'carl',
+];
 
-// minions.forEach(present);
+minions.forEach(present);
 
-// function present(item) {
-//     console.log(item + ' - here');
-// }
+function present(item) {
+    console.log(item + ' - here');
+}
 
 // Create a .forEach--------------------------------------------

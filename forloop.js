@@ -114,8 +114,8 @@
 
 // Create a for Loop--------------------------------------------
 
-// for (let i = 0; i < 100; i++) {
-//     console.log('Hello World');
-// }
+for (let i = 0; i < 100; i++) {
+    console.log('Hello World');
+}
 
 // Create a for Loop--------------------------------------------

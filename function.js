@@ -27,24 +27,24 @@ coins[1] = 'nickles'; // $00.05
 coins[2] = 'dimes'; // $00.10
 coins[3] = 'quarters'; // $00.25
 
-// console.log(coins);
+console.log(coins);
 
-// function coinCombo(cents) {
-//     if (cents === 1) {
-//         coins.splice(0, 1, 1);
-//     }
-//     if (cents === 5) {
-//         coins.splice(1, 1, 1);
-//     }
-//     if (cents === 10) {
-//         coins.splice(2, 1, 1);
-//     }
-//     if (cents === 25) {
-//         coins.splice(3, 1, 1);
-//     } else {
-//         coins.splice(0, 1, 0);
-//     }
-//     return coins;
-// }
+function coinCombo(cents) {
+    if (cents === 1) {
+        coins.splice(0, 1, 1);
+    }
+    if (cents === 5) {
+        coins.splice(1, 1, 1);
+    }
+    if (cents === 10) {
+        coins.splice(2, 1, 1);
+    }
+    if (cents === 25) {
+        coins.splice(3, 1, 1);
+    } else {
+        coins.splice(0, 1, 0);
+    }
+    return coins;
+}
 
-// console.log(coinCombo(1));
+console.log(coinCombo(1));
