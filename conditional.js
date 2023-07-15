@@ -8,10 +8,27 @@
 // “Else if” statements: this specifies a new test if the first condition is false.
 // Now that you have the basic JavaScript conditional statement definitions, let’s show you examples of each.
 
-if (10 > 5) {
-    console.log('10 is greater then 5');
-} else {
-    console.log('5 is not greater then 10');
+// if (10 > 5) {
+//     console.log('10 is greater then 5');
+// } else {
+//     console.log('5 is not greater then 10');
+// }
+
+// Create a conditional--------------------------------------------
+
+function largerThan(num1, num2) {
+    if (num1 > num2) {
+        console.log(num1 + ' is the largest integer');
+    } else if (num1 < num2) {
+        console.log(num2 + ' is the largest integer');
+    } else if (num1 === num2) {
+        console.log(num1 + ' and ' + num2 + ' are equal');
+    }
+    return;
 }
+
+largerThan(8, 3);
+largerThan(1, 7);
+largerThan(5, 5);
 
 // Create a conditional--------------------------------------------
