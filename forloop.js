@@ -114,8 +114,26 @@
 
 // Create a for Loop--------------------------------------------
 
-for (let i = 0; i < 100; i++) {
-    console.log('Hello World');
-}
+// for (let i = 0; i < 100; i++) {
+//     console.log('Hello World');
+// }
 
 // Create a for Loop--------------------------------------------
+
+// const create2Darr = (rows, columns) => {
+//     let arr = [];
+//     let value = 0;
+
+//     // creating two-dimensional array
+//     for (let i = 0; i < rows; i++) {
+//         arr[i] = [];
+//         for (let j = 0; j < columns; j++) {
+//             arr[i][j] = value++;
+//         }
+//     }
+//     console.log(arr);
+// };
+
+// let rows = 4;
+// let columns = 3;
+// create2Darr(rows, columns);
