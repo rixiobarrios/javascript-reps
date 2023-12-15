@@ -63,24 +63,67 @@
 
 // Create a conditional--------------------------------------------
 
-let raceNumber = Math.floor(Math.random() * 1000);
+// let raceNumber = Math.floor(Math.random() * 1000);
 
-let earlyRegisteredRunner = false; // Change to test
+// let earlyRegisteredRunner = false; // Change to test
 
-let runnersAge = 18; // Change to test
+// let runnersAge = 18; // Change to test
 
-if (runnersAge > 18 && raceNumber >= 1000) {
-    raceNumber += 1000;
-}
-if (runnersAge > 18 && earlyRegisteredRunner === true) {
-    console.log(`You will race at 9:30 am with race number ${raceNumber}`);
-} else if (runnersAge > 18 && earlyRegisteredRunner === false) {
-    console.log(`You will race at 11:00 am with race number ${raceNumber}`);
-} else if (
-    (runnersAge === 18 && earlyRegisteredRunner === true) ||
-    earlyRegisteredRunner === false
-) {
-    console.log(`See the registration desk`);
+// if (runnersAge > 18 && raceNumber >= 1000) {
+//     raceNumber += 1000;
+// }
+// if (runnersAge > 18 && earlyRegisteredRunner === true) {
+//     console.log(`You will race at 9:30 am with race number ${raceNumber}`);
+// } else if (runnersAge > 18 && earlyRegisteredRunner === false) {
+//     console.log(`You will race at 11:00 am with race number ${raceNumber}`);
+// } else if (
+//     (runnersAge === 18 && earlyRegisteredRunner === true) ||
+//     earlyRegisteredRunner === false
+// ) {
+//     console.log(`See the registration desk`);
+// } else {
+//     console.log(`You will race at 12:30 pm with race number ${raceNumber}`);
+// }
+
+// Create a conditional--------------------------------------------
+
+// let runTime = 35;
+// let runDistance = 3.5;
+
+// if (runTime <= 30 && runDistance > 3.5) {
+//     console.log("You're super fast!");
+// } else if (runTime >= 30 && runDistance <= 3) {
+//     console.log("You're not making your pace!");
+// } else if (runTime > 30 || runDistance > 3) {
+//     console.log('Nice workout!');
+// } else {
+//     console.log('Keep on running!');
+// }
+
+// Create a conditional--------------------------------------------
+
+// let weather = 'spring';
+// let clothingChoice = '';
+
+// if (weather === 'spring') {
+//     clothingChoice = 'Put on rain boots.';
+// } else if (weather === 'summer') {
+//     clothingChoice = 'Make sure to take your sunscreen.';
+// } else if (weather === 'fall') {
+//     clothingChoice = 'Wear a light jacket.';
+// } else if (weather === 'winter') {
+//     clothingChoice = 'Wear a heavy coat.';
+// } else {
+//     console.log('Invalid weather type.');
+// }
+// console.log(clothingChoice);
+
+// Create a conditional--------------------------------------------
+
+let coin = 'tails';
+
+if (coin === 'heads') {
+    console.log('coin is heads!');
 } else {
-    console.log(`You will race at 12:30 pm with race number ${raceNumber}`);
+    console.log('coin is tails...');
 }

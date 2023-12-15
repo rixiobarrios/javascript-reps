@@ -53,3 +53,32 @@
 // console.log(sum(11, 9));
 
 // Create arrow function-------------------------------------------
+
+// Function
+function plantNeedsWater(day) {
+    if (day === 'Wednesday') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(plantNeedsWater('Tuesday')); // Return false
+
+// Arrow function
+const plantNeedsWater = (day) => {
+    if (day === 'Wednesday') {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+console.log(plantNeedsWater('Friday')); // Return false
+
+// Concise body
+const plantNeedsWater = (day) => (day === 'Wednesday' ? true : false);
+
+console.log(plantNeedsWater('Sunday')); // Return false
+
+// Create arrow function-------------------------------------------

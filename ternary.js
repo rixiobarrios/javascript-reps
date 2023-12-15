@@ -34,3 +34,22 @@
 // favoritePhrase === 'Love That!'
 //     ? console.log('I love that!')
 //     : console.log("I don't love that!");
+
+//-------------------------------------------------------------
+
+// Without ternary operator
+let walkSignal = 'Walk';
+
+if (walkSignal === 'Walk') {
+    console.log('You may walk!');
+} else {
+    console.log('Do not walk!');
+}
+
+// With ternary operator
+
+walkSignal === 'Walk'
+    ? console.log('You may walk')
+    : console.log('Do not walk!');
+
+//-------------------------------------------------------------
