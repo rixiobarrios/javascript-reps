@@ -21,3 +21,17 @@
 // // Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
 
 // Create a slice--------------------------------------------
+
+const groceryList = [
+    'orange juice',
+    'bananas',
+    'coffee beans',
+    'brown rice',
+    'pasta',
+    'coconut oil',
+    'plantains',
+];
+
+console.log(groceryList.slice(1, 4));
+
+//-----------------------------------------------------------

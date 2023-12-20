@@ -38,4 +38,16 @@ console.log(cities[0][0]);
 
 // console.log(concepts);
 
-//-----------------------------------------------------------------
+//--------------------------------------------------------------
+
+const concept = ['arrays', 'can', 'be', 'mutated'];
+
+function changeArr(arr) {
+    arr[3] = 'MUTATED';
+}
+
+changeArr(concept);
+
+console.log(concept);
+
+//-----------------------------------------------------------

@@ -51,22 +51,52 @@
 
 //---------------------------------------------------------------
 
-// Without a function / Can't reuse
-const width = 10;
-const height = 6;
-const area = width * height;
-console.log(area); // Output: 60
+// // Without a function / Can't reuse
+// const width = 10;
+// const height = 6;
+// const area = width * height;
+// console.log(area); // Output: 60
 
-// Wth function / reusable
-function areaOfTriangle(width, height) {
-    return width * height;
+// // Wth function / reusable
+// function areaOfTriangle(width, height) {
+//     return width * height;
+// }
+
+// // Use 1
+// console.log(areaOfTriangle(10, 6)); // Output: 60
+// // Use 2
+// console.log(areaOfTriangle(10, 5)); // Output: 50
+// // Use 3
+// console.log(areaOfTriangle(10, 4)); // Output: 40
+
+//--------------------------------------------------------------
+
+// const flowers = ['peony', 'daffodil', 'marigold'];
+
+// function addFlower(arr) {
+//     arr.push('lily');
+// }
+
+// addFlower(flowers);
+
+// console.log(flowers); // Output: ['peony', 'daffodil', 'marigold', 'lily']
+
+//----------------------------------------------------------
+
+const concept = ['arrays', 'can', 'be', 'mutated'];
+
+function changeArr(arr) {
+    arr[3] = 'MUTATED';
 }
 
-// Use 1
-console.log(areaOfTriangle(10, 6)); // Output: 60
-// Use 2
-console.log(areaOfTriangle(10, 5)); // Output: 50
-// Use 3
-console.log(areaOfTriangle(10, 4)); // Output: 40
+changeArr(concept);
 
-//----------------------------------------------------------------
+console.log(concept);
+
+function removeElement(newArr) {
+    newArr.pop();
+}
+
+removeElement(concept);
+
+console.log(concept);

@@ -50,38 +50,22 @@
 // Create a for Loop--------------------------------------------
 // Write a JavaScript program that iterates integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz". For numbers multiples of both three and five print "FizzBuzz".
 
-// Create a for Loop--------------------------------------------
-// Write a JavaScript program to construct the following pattern, using a nested for loop.
-// *
-// * *
-// * * *
-// * * * *
-// * * * * *
-
-// let i, j, asterisk;
-// for (i = 1; i <= 6; i++) {
-//     for (j = 1; j < i; j++) {
-//         asterisk = asterisk + '*';
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 3 === 0) {
+//         console.log('Fizz');
 //     }
-//     console.log(asterisk);
-//     asterisk = '';
-// }
-
-//Fixed undefined on return
-
-// let i, j;
-// let asterisk = [];
-// let index = 0;
-
-// for (i = 0; i <= 4; i++) {
-//     for (let j = 0; j <= index; j++) {
-//         asterisk.push('*');
-//         index + 1;
+//     if (i % 5 === 0) {
+//         console.log('Buzz');
 //     }
-//     console.log(asterisk.join(' '));
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         console.log('FizzBuzz');
+//     } else {
+//         console.log(i);
+//     }
 // }
 
 // Create a for Loop--------------------------------------------
+
 // Add numbers in an array by looping through them
 
 // const arr = [8, 2, 3];
@@ -120,20 +104,42 @@
 
 // Create a for Loop--------------------------------------------
 
-// const create2Darr = (rows, columns) => {
-//     let arr = [];
-//     let value = 0;
+// for (let counter = 0; counter < 4; counter++) {
+//     console.log(counter);
+// }
 
-//     // creating two-dimensional array
-//     for (let i = 0; i < rows; i++) {
-//         arr[i] = [];
-//         for (let j = 0; j < columns; j++) {
-//             arr[i][j] = value++;
-//         }
-//     }
-//     console.log(arr);
-// };
+//-------------------------------------------------------------
 
-// let rows = 4;
-// let columns = 3;
-// create2Darr(rows, columns);
+// for (let i = 5; i <= 10; i++) {
+//     console.log(i);
+// }
+
+//-------------------------------------------------------------
+
+// // The loop below loops from 0 to 3. Edit it to loop backwards from 3 to 0
+// for (let counter = 0; counter < 4; counter++) {
+//     console.log(counter);
+// }
+
+// // Solution
+// for (let counter = 3; counter >= 0; counter--) {
+//     console.log(counter);
+// }
+
+//------------------------------------------------------------
+
+// const animals = ['Grizzly Bear', 'Sloth', 'Sea Lion'];
+// for (let i = 0; i < animals.length; i++) {
+//     console.log(animals[i]);
+// }
+
+//-------------------------------------------------------------
+
+// const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+// // Write your code below
+// for (let i = 0; i < vacationSpots.length; i++) {
+//     console.log('I would love to visit ' + vacationSpots[i]);
+// }
+
+//--------------------------------------------------------------
