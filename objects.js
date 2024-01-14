@@ -16,3 +16,19 @@
 // const objA = { a: 1, b: 2, c: 1 };
 // const objB = { a: 1, b: 2, c: 1 };
 // const objC = { a: 1, b: 2, d: 1 };
+
+// console.log(objA);
+// console.log(objB);
+// console.log(objC);
+
+//------------------------------------------------
+
+// // An object literal with two key-value pairs
+// let spaceship = {
+//     'Fuel Type': 'diesel',
+//     color: 'silver',
+// };
+
+// console.log(spaceship);
+
+//--------------------------------------------------

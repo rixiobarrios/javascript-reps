@@ -67,9 +67,34 @@
 
 //-----------------------------------------------------------
 
-const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+// const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
 
-// Iterate over fruits below
-fruits.forEach(function (fruitItem) {
-    console.log('I want to eat a ' + fruitItem);
-});
+// // Iterate over fruits below
+// fruits.forEach(function (fruitItem) {
+//     console.log('I want to eat a ' + fruitItem);
+// });
+
+//----------------------------------------------------------
+
+// [1, 2, 3, 4].forEach(function (element) {
+//     console.log(`Printing ${element} to the console!`);
+// });
+
+//-----------------------------------------------------------
+
+const cities = [
+    'Orlando',
+    'Dubai',
+    'Edinburgh',
+    'Chennai',
+    'Accra',
+    'Denver',
+    'Eskisehir',
+    'Medellin',
+    'Yokohama',
+];
+
+//  Choose a method that will return undefined
+cities.forEach((city) => console.log('Have you visited ' + city + '?'));
+
+//---------------------------------------------------------
