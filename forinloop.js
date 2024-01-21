@@ -12,3 +12,35 @@
 // "a: 1"
 // "b: 2"
 // "c: 3"
+
+//-------------------------------------------------------------
+
+// const passengers = [
+//     'Will Alexander',
+//     'Sarah Kate',
+//     'Audrey Simon',
+//     'Tau Perkington',
+// ];
+
+// for (let i in passengers) {
+//     console.log('Boarding passenger ' + passengers[i]);
+// }
+
+//---------------------------------------------------------------
+
+const passengers = [
+    'Will Alexander',
+    'Sarah Kate',
+    'Audrey Simon',
+    'Tau Perkington',
+];
+
+let passengersBoarded = 10;
+
+for (let i in passengers) {
+    passengersBoarded++;
+}
+
+console.log(passengersBoarded);
+
+//---------------------------------------------------------

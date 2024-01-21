@@ -143,3 +143,30 @@
 // logVisibleLightWaves();
 
 //-----------------------------------------------------------------
+
+// Out of scope
+
+// let userLoggedIn = true;
+
+// if (userLoggedIn) {
+//     let welcomeMessage = 'Welcome back!';
+// } else {
+//     let welcomeMessage = 'Welcome new user!';
+// }
+
+// console.log(welcomeMessage); // throws an error
+
+// In scope
+
+let userLoggedIn = true;
+let welcomeMessage = ''; // declare the variable here
+
+if (userLoggedIn) {
+    welcomeMessage = 'Welcome back!'; // modify the outer variable
+} else {
+    welcomeMessage = 'Welcome new user!'; // modify the outer variable
+}
+
+console.log(welcomeMessage); // prints 'Welcome back!'
+
+//------------------------------------------------------------

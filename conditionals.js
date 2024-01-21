@@ -120,10 +120,129 @@
 
 // Create a conditional--------------------------------------------
 
-let coin = 'tails';
+// let coin = 'tails';
 
-if (coin === 'heads') {
-    console.log('coin is heads!');
-} else {
-    console.log('coin is tails...');
+// if (coin === 'heads') {
+//     console.log('coin is heads!');
+// } else {
+//     console.log('coin is tails...');
+// }
+
+//--------------------------------------------------------
+
+// let userLoggedIn = true;
+
+// if (userLoggedIn) {
+//     console.log('User logged in!');
+// } else {
+//     console.log('Intruder alert!');
+// }
+
+//----------------------------------------------------------
+
+// let userLoggedIn = true;
+// let userHasPremiumAccount = true;
+// let userHasMegaPremiumAccount = false;
+
+// userLoggedIn && userHasPremiumAccount; // true
+// userLoggedIn && userHasMegaPremiumAccount; // false
+
+// userLoggedIn || userHasPremiumAccount; // true
+// userLoggedIn || userHasMegaPremiumAccount; // true
+
+// !userLoggedIn; // false
+// !userHasMegaPremiumAccount; // true
+
+//---------------------------------------------------------
+
+// let online = true;
+// let message = '';
+
+// if (online) {
+//     message = 'User online!';
+// } else {
+//     message = 'User offline!';
+// }
+
+// console.log(message);
+
+//------------------------------------------------------
+
+// let passengersBoarded = 0;
+
+// if (passengersBoarded <= 10) {
+//     passengersBoarded += 10;
+// } else {
+//     passengersBoarded -= passengersBoarded - 10;
+// }
+
+// console.log(passengersBoarded);
+
+//-------------------------------------------------------
+
+// let passengersBoarded = 18;
+
+// if (passengersBoarded <= 10) {
+//     passengersBoarded += 10;
+// } else {
+//     passengersBoarded -= passengersBoarded - 10;
+// }
+
+// console.log(passengersBoarded);
+
+//-----------------------------------------------------------
+
+// const user = {
+//     name: 'Will Alexander',
+//     nationality: 'Scottish',
+//     accountLevel: 'premium',
+// };
+
+// let welcomeMessage = '';
+
+// switch (user.accountLevel) {
+//     case 'Will Alexander':
+//         welcomeMessage = 'Hi Will!';
+//         break;
+//     case 'Scottish':
+//         welcomeMessage = 'Och aye the noo!';
+//         break;
+//     case 'normal':
+//         welcomeMessage = 'Welcome back!';
+//         break;
+//     case 'premium':
+//         welcomeMessage = 'Welcome power user!';
+//         break;
+//     default:
+//         welcomeMessage = 'Hello there!';
+// }
+
+// console.log(welcomeMessage);
+
+//----------------------------------------------------------
+
+let vipStatus = '';
+
+let guest = {
+    name: 'Sarah Kate',
+    age: 21,
+    ticket: true,
+    guestType: 'artist',
+};
+
+switch (guest.guestType) {
+    case 'artist':
+        vipStatus = 'Normal';
+    case 'star':
+        vipStatus = 'Important';
+        break;
+    case 'presidential':
+        vipStatus = 'Mega-important';
+        break;
+    default:
+        vipStatus = 'None';
 }
+
+console.log(vipStatus); // "Important" since there is no break after normal
+
+//----------------------------------------------------------
