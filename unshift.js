@@ -27,3 +27,11 @@ groceryList.unshift('popcorn');
 console.log(groceryList);
 
 //--------------------------------------------------------------
+
+let guests = ['Will Alexander', 'Sarah Kate', 'Audrey Simon'];
+
+guests.unshift('Tau Perkington'); // 'Tau Perkington' is added at the beginning of the guests array
+
+console.log(guests);
+
+//-------------------------------------------------------------

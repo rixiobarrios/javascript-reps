@@ -20,3 +20,11 @@
 // console.log(chores);
 
 //-----------------------------------------------------------
+
+let guests = ['Will Alexander', 'Sarah Kate', 'Audrey Simon'];
+
+guests.push('Tau Perkington'); // adds 'Tau Perkington' to the end of our guests array
+
+console.log(guest);
+
+//------------------------------------------------------------

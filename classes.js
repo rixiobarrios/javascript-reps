@@ -3,9 +3,11 @@
 // Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
 
 // Defining classes
+
 // Classes are in fact "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.
 
 //Function expressions
+
 // They are very similar to, and has almost the same syntax as, a function declaration. The main difference between a function expression and a function declaration is the function name, which can be omitted in function expressions to create anonymous functions. A function expression can be used as an IIFE (Immediately Invoked Function Expression) which runs as soon as it is defined. See also the chapter about functions for more information.
 
 // const getRectArea = function (width, height) {
@@ -16,6 +18,7 @@
 // Expected output: 12
 
 // Class declarations
+
 // One way to define a class is using a class declaration. To declare a class, you use the class keyword with the name of the class ("Rectangle" here).
 
 // class Rectangle {
@@ -26,6 +29,7 @@
 // }
 
 // Expression; the class is anonymous but assigned to a variable
+
 // const Rectangle = class {
 //   constructor(height, width) {
 //     this.height = height;
@@ -71,6 +75,7 @@
 // console.log([...square.getSides()]); // [10, 10, 10, 10]
 
 //Static
+
 // The static keyword defines a static method or field for a class, or a static initialization block. Static properties cannot be directly accessed on instances of the class. Instead, they're accessed on the class itself.
 
 // Static methods are often utility functions, such as functions to create or clone objects, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
@@ -91,6 +96,7 @@
 // // Expected output: "static method has been called."
 
 // Create a class--------------------------------------------
+
 // class User {
 //     constructor(name) {
 //         this.name = name;
@@ -104,6 +110,7 @@
 // user.sayHi();
 
 // Create a class--------------------------------------------
+
 // class Car {
 //     constructor(make) {
 //         this.make = make;
@@ -116,6 +123,7 @@
 // car.drive();
 
 // Create a class--------------------------------------------
+
 // class Dog {
 //     constructor(breed) {
 //         this.breed = breed;
@@ -128,6 +136,7 @@
 // dog.bark();
 
 // Create a class--------------------------------------------
+
 // class Vehicle {
 //     constructor(model, year) {
 //         this.model = model;
@@ -142,6 +151,7 @@
 // console.log(vehicle2);
 
 // Create a class--------------------------------------------
+
 // class Employee {
 //     constructor(title, startYear) {
 //         this.title = title;
@@ -167,6 +177,7 @@
 // );
 
 // Create a class--------------------------------------------
+
 // class Password {
 //     constructor(combination) {
 //         this.combination = combination;
@@ -179,6 +190,7 @@
 // console.log(password2);
 
 // Create a class--------------------------------------------
+
 // function Pen(name, color, price) {
 //     this.name = name;
 //     this.color = color;
@@ -200,6 +212,7 @@
 // pen2.showPrice();
 
 // Create a class--------------------------------------------
+
 // class Pie {
 //     constructor(flavor) {
 //         this.flavor = flavor;
@@ -213,6 +226,7 @@
 // console.log(pie2);
 
 // Create a class--------------------------------------------
+
 // class Person {
 //     constructor(
 //         firstName = 'John',
@@ -275,19 +289,35 @@
 // console.log(Person.greetExtraTerrestrials('Martians'));
 
 // Create a class--------------------------------------------
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    get info() {
-        return this.nameAge();
-    }
-    nameAge() {
-        return this.name + 's age is ' + this.age;
+// class Person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     get info() {
+//         return this.nameAge();
+//     }
+//     nameAge() {
+//         return this.name + 's age is ' + this.age;
+//     }
+// }
+
+// const john = new Person('john', 34);
+
+// console.log(john.info);
+
+//----------------------------------------------------------
+
+class Book {
+    constructor(title, author, pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
     }
 }
 
-const john = new Person('john', 34);
+let myBook = new Book('The Story of Tau', 'Will Alexander', 250);
 
-console.log(john.info);
+console.log(myBook);
+
+//-----------------------------------------------------------

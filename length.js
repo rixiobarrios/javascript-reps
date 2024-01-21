@@ -9,6 +9,16 @@
 
 //--------------------------------------------------------------
 
-const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
+// const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
 
-console.log(objectives.length);
+// console.log(objectives.length);
+
+//-----------------------------------------------------------
+
+let guests = ['Will Alexander', 'Sarah Kate', 'Audrey Simon'];
+let howManyGuests = guests.length; // 3
+
+console.log(guests);
+console.log(howManyGuests);
+
+//------------------------------------------------------------
