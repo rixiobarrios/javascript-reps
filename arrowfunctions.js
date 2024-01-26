@@ -54,31 +54,48 @@
 
 // Create arrow function-------------------------------------------
 
-// Function
-function plantNeedsWater(day) {
-    if (day === 'Wednesday') {
-        return true;
-    } else {
-        return false;
-    }
-}
+// // Function
+// function plantNeedsWater(day) {
+//     if (day === 'Wednesday') {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
-console.log(plantNeedsWater('Tuesday')); // Return false
+// console.log(plantNeedsWater('Tuesday')); // Return false
 
-// Arrow function
-const plantNeedsWater = (day) => {
-    if (day === 'Wednesday') {
-        return true;
-    } else {
-        return false;
-    }
-};
+// // Arrow function
+// const plantNeedsWater = (day) => {
+//     if (day === 'Wednesday') {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// };
 
-console.log(plantNeedsWater('Friday')); // Return false
+// console.log(plantNeedsWater('Friday')); // Return false
 
-// Concise body
-const plantNeedsWater = (day) => (day === 'Wednesday' ? true : false);
+// // Concise body
+// const plantNeedsWater = (day) => (day === 'Wednesday' ? true : false);
 
-console.log(plantNeedsWater('Sunday')); // Return false
+// console.log(plantNeedsWater('Sunday')); // Return false
 
 // Create arrow function-------------------------------------------
+
+const printStringStats = (stringToTest) => {
+    const wordArray = stringToTest.split(' ');
+    const wordCount = wordArray.length;
+    let letterCount = 0;
+    for (let word of wordArray) {
+        word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+        letterCount += word.length;
+    }
+    const averageWordLength = parseFloat((letterCount / wordCount).toFixed(2));
+    const stringStats = {
+        wordCount: wordCount,
+        letterCount: letterCount,
+        averageWordLength: averageWordLength,
+    };
+    console.log(stringStats);
+};

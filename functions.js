@@ -83,20 +83,38 @@
 
 //----------------------------------------------------------
 
-const concept = ['arrays', 'can', 'be', 'mutated'];
+// const concept = ['arrays', 'can', 'be', 'mutated'];
 
-function changeArr(arr) {
-    arr[3] = 'MUTATED';
-}
+// function changeArr(arr) {
+//     arr[3] = 'MUTATED';
+// }
 
-changeArr(concept);
+// changeArr(concept);
 
-console.log(concept);
+// console.log(concept);
 
-function removeElement(newArr) {
-    newArr.pop();
-}
+// function removeElement(newArr) {
+//     newArr.pop();
+// }
 
-removeElement(concept);
+// removeElement(concept);
 
-console.log(concept);
+// console.log(concept);
+
+//----------------------------------------------------------
+
+const sendWelcomeMessageToUser = (user) => {
+    if (user.online) {
+        if (user.accountType === 'normal') {
+            console.log('Hello ' + user.name + '!');
+        } else {
+            console.log('Welcome back premium user ' + user.name + '!');
+        }
+    }
+};
+
+sendWelcomeMessageToUser(firstUser);
+sendWelcomeMessageToUser(secondUser);
+sendWelcomeMessageToUser(thirdUser);
+
+//-----------------------------------------------------------

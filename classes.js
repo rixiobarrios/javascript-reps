@@ -308,16 +308,77 @@
 
 //----------------------------------------------------------
 
-class Book {
-    constructor(title, author, pages) {
-        this.title = title;
-        this.author = author;
-        this.pages = pages;
-    }
-}
+// class Book {
+//     constructor(title, author, pages) {
+//         this.title = title;
+//         this.author = author;
+//         this.pages = pages;
+//     }
+// }
 
-let myBook = new Book('The Story of Tau', 'Will Alexander', 250);
+// let myBook = new Book('The Story of Tau', 'Will Alexander', 250);
 
-console.log(myBook);
+// console.log(myBook);
 
 //-----------------------------------------------------------
+
+// class BankAccount {
+//     constructor(owner, balance) {
+//         this.owner = owner;
+//         this.balance = balance;
+//     }
+//     showBalance() {
+//         console.log('Balance: ' + this.balance + ' EUR');
+//     }
+// }
+
+// const newAccount = new BankAccount('Will Alexander', 500);
+
+// newAccount.showBalance(); // prints 'Balance: 500 EUR' to the console
+
+//-----------------------------------------------------------
+
+// class BankAccount {
+//     constructor(owner, balance) {
+//         this.owner = owner;
+//         this.balance = balance;
+//     }
+
+//     showBalance() {
+//         console.log('Balance: ' + this.balance + ' EUR');
+//     }
+
+//     deposit(amount) {
+//         console.log('Depositing ' + amount + ' EUR');
+//         this.balance += amount;
+//         this.showBalance();
+//     }
+
+//     withdraw(amount) {
+//         if (amount > this.balance) {
+//             console.log('Withdrawal denied!');
+//         } else {
+//             console.log('Withdrawing ' + amount + ' EUR');
+//             this.balance -= amount;
+//             this.showBalance();
+//         }
+//     }
+// }
+
+//----------------------------------------------------------
+
+// class BePolite {
+//     static sayHello() {
+//         console.log('Hello!');
+//     }
+//     static sayHelloTo(name) {
+//         console.log('Hello ' + name + '!');
+//     }
+//     static add(firstNumber, secondNumber) {
+//         return firstNumber + secondNumber;
+//     }
+// }
+
+// BePolite.sayHello(); // prints 'Hello!'
+// BePolite.sayHelloTo('Will'); // prints 'Hello Will!'
+// const sum = BePolite.add(2, 3); // sum = 5

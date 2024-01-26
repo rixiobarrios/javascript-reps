@@ -708,18 +708,46 @@
 
 //----------------------------------------------------------
 
-let myBook = {
-    title: 'The Story of Tau',
-    author: 'Will Alexander',
-    numberOfPages: 250,
-    isAvailable: true,
-};
+// let myBook = {
+//     title: 'The Story of Tau',
+//     author: 'Will Alexander',
+//     numberOfPages: 250,
+//     isAvailable: true,
+// };
 
-let bookTitle = myBook.title; // 'The Story of Tau'
-let bookPages = myBook.numberOfPages; // 250
+// let bookTitle = myBook.title; // 'The Story of Tau'
+// let bookPages = myBook.numberOfPages; // 250
 
-console.log(myBook);
-console.log(myBook.title);
-console.log(myBook.numberOfPages);
+// console.log(myBook);
+// console.log(myBook.title);
+// console.log(myBook.numberOfPages);
 
 //-----------------------------------------------------------
+
+// CONSTRUCTOR
+
+// The constructor method is a special method of a class for creating and initializing an object instance of that class.
+
+// class Polygon {
+//     constructor() {
+//         this.name = 'Polygon';
+//     }
+// }
+
+// const poly1 = new Polygon();
+
+// console.log(poly1.name);
+// // expected output: "Polygon"
+
+//-------------------------------------------------------------
+
+// class BankAccount {
+//     constructor(owner, balance) {
+//         this.owner = owner;
+//         this.balance = balance;
+//     }
+// }
+
+// const newAccount = new BankAccount('Will Alexander', 500);
+
+//------------------------------------------------------------
