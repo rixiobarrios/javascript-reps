@@ -83,19 +83,87 @@
 
 // Create arrow function-------------------------------------------
 
-const printStringStats = (stringToTest) => {
+// const printStringStats = (stringToTest) => {
+//     const wordArray = stringToTest.split(' ');
+//     const wordCount = wordArray.length;
+//     let letterCount = 0;
+//     for (let word of wordArray) {
+//         word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+//         letterCount += word.length;
+//     }
+//     const averageWordLength = parseFloat((letterCount / wordCount).toFixed(2));
+//     const stringStats = {
+//         wordCount: wordCount,
+//         letterCount: letterCount,
+//         averageWordLength: averageWordLength,
+//     };
+//     console.log(stringStats);
+// };
+
+// // Refactor
+// const getWordCount = (stringToTest) => {
+//     const wordArray = stringToTest.split(' ');
+//     return wordArray.length;
+// };
+
+// const getLetterCount = (stringToTest) => {
+//     const wordArray = stringToTest.split(' ');
+//     let totalLetters = 0;
+//     for (let word of wordArray) {
+//         word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+//         totalLetters += word.length;
+//     }
+//     return totalLetters;
+// };
+
+// const getAverageWordLength = (stringToTest) => {
+//     return parseFloat(
+//         (getLetterCount(stringToTest) / getWordCount(stringToTest)).toFixed(2)
+//     );
+// };
+
+// const printStringStats = (stringToTest) => {
+//     console.log({
+//         wordCount: getWordCount(stringToTest),
+//         letterCount: getLetterCount(stringToTest),
+//         averageWordLength: getAverageWordLength(stringToTest),
+//     });
+// };
+
+// With comments
+
+const getWordCount = (stringToTest) => {
     const wordArray = stringToTest.split(' ');
-    const wordCount = wordArray.length;
-    let letterCount = 0;
-    for (let word of wordArray) {
-        word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
-        letterCount += word.length;
-    }
-    const averageWordLength = parseFloat((letterCount / wordCount).toFixed(2));
-    const stringStats = {
-        wordCount: wordCount,
-        letterCount: letterCount,
-        averageWordLength: averageWordLength,
-    };
-    console.log(stringStats);
+    return wordArray.length;
 };
+
+const getLetterCount = (stringToTest) => {
+    const wordArray = stringToTest.split(' ');
+    let totalLetters = 0;
+    for (let word of wordArray) {
+        // remove punctuation so as to only count letters
+        word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+        totalLetters += word.length;
+    }
+    return totalLetters;
+};
+
+/*
+ ** returns average word length to
+ ** two decimal places
+ */
+const getAverageWordLength = (stringToTest) => {
+    return parseFloat(
+        (getLetterCount(stringToTest) / getWordCount(stringToTest)).toFixed(2)
+    );
+};
+
+const printStringStats = (stringToTest) => {
+    console.log({
+        wordCount: getWordCount(stringToTest),
+        letterCount: getLetterCount(stringToTest),
+        averageWordLength: getAverageWordLength(stringToTest),
+    });
+};
+
+//----------------------------------------------------------------------------
