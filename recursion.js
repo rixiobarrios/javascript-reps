@@ -37,4 +37,6 @@ const getAllComments = (comment) => {
     return allComments;
 };
 
+console.log(getAllComments(commentToTest));
+
 //-------------------------------------------------------
