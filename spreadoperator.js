@@ -4,16 +4,35 @@
 
 // Spread syntax looks exactly like rest syntax. In a way, spread syntax is the opposite of rest syntax. Spread syntax "expands" an array into its elements, while rest syntax collects multiple elements and "condenses" them into a single element. See rest parameters and rest property.
 
-function sum(x, y, z) {
-    return x + y + z;
-}
+// function sum(x, y, z) {
+//     return x + y + z;
+// }
 
-const numbers = [1, 2, 3];
+// const numbers = [1, 2, 3];
 
-console.log(sum(...numbers));
-// Expected output: 6
+// console.log(sum(...numbers));
+// // Expected output: 6
 
-console.log(sum.apply(null, numbers));
-// Expected output: 6
+// console.log(sum.apply(null, numbers));
+// // Expected output: 6
+
+//-----------------------------------------------------------------
+
+// const numbers = [1, 2, 3];
+// console.log(...numbers); //Result: 1 2 3
+
+//-----------------------------------------------------------------
+
+// const pokemon = ['Squirtle', 'Bulbasur', 'Charmander'];
+// console.log(...pokemon); //Squirtle Bulbasur Charmander
+
+//-----------------------------------------------------------------
+
+const pokedex = [
+    { name: 'Squirtle', type: 'Water' },
+    { name: 'Bulbasur', type: 'Plant' },
+    { name: 'Charmander', type: 'Fire' },
+];
+console.log(...pokedex); //{ name: 'Squirtle', type: 'Water' } { name: 'Bulbasur', type: 'Plant' } { name: 'Charmander', type: 'Fire' }
 
 //-----------------------------------------------------------------
